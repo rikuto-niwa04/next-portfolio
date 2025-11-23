@@ -10,7 +10,6 @@ export const projects: Project[] = [
       "自己紹介・スキルセット・Works をまとめたポートフォリオサイト。App Router と TypeScript を使用。",
     githubUrl: "https://github.com/rikuto-niwa04/next-portfolio",
 
-    // ★ 追加分ここから
     period: "2025年11月（1〜2週間）",
     role: "フロントエンド / UI 設計〜実装まで担当",
     features: [
