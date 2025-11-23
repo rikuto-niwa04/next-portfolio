@@ -85,11 +85,11 @@ Contact フォーム（API Route）実装
 
 Vercel へのデプロイ
 
-🔗 GitHub / SNS
+## 🔗 GitHub / SNS
 
-GitHub: https://github.com/rikuto-niwa04
+- GitHub: https://github.com/rikuto-niwa04
+- Portfolio（Vercel）: https://next-portfolio-seven-drab.vercel.app/
 
-Portfolio（Vercel）: Coming Soon
 
 📄 ライセンス
 
