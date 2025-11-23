@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📘 Rikuto Niwa – Next.js Portfolio
 
-## Getting Started
+モダンフロントエンド技術（Next.js / TypeScript / React）を中心に学習・開発しているエンジニア 丹羽陸斗（Rikuto Niwa） のポートフォリオサイトです。
+App Router と TypeScript を用いて、拡張性・可読性・型安全性を意識した構成で作成しています。
 
-First, run the development server:
+🚀 技術スタック
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js 16 (App Router / Server Components)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+React 18
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tailwind CSS
 
-## Learn More
+ESLint / Prettier
 
-To learn more about Next.js, take a look at the following resources:
+Vercel（デプロイ予定）
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🧱 構成（Directory Structure）
+next-portfolio/
+├─ app/
+│  ├─ layout.tsx        # 共通レイアウト
+│  ├─ page.tsx          # Home
+│  ├─ works/
+│  │   ├─ page.tsx      # Works 一覧
+│  │   └─ [slug]/page.tsx   # プロジェクト詳細ページ
+│  ├─ about/page.tsx    # 経歴
+│  └─ contact/page.tsx  # 連絡先
+│
+├─ components/
+│  ├─ work-card.tsx     # Works 用カードコンポーネント
+│  └─ ...               # 今後追加予定
+│
+├─ lib/
+│  └─ projects.ts       # プロジェクトデータ定義
+│
+├─ types/
+│  └─ project.ts        # Project 型定義
+│
+├─ public/              # 画像など
+└─ package.json
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📂 主なページ
+🔹 Home
 
-## Deploy on Vercel
+自己紹介とポートフォリオ概要を掲載。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔹 About
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+経歴・学習ロードマップ・得意技術をまとめています。
+
+🔹 Works
+
+Project 型でデータを一元管理し、
+一覧 → 詳細（動的ルーティング） で閲覧できる構成になっています。
+
+🔹 Contact
+
+GitHub などの連絡先を掲載しています。
+※ 後日フォーム機能を追加予定。
+
+🛠 開発のこだわり
+
+App Router + TypeScript を最大限活かした実装
+
+Project 型による 型安全なデータ管理
+
+一覧・詳細ページを 同一データソースから自動生成
+
+UI は Tailwind CSS でシンプル & 拡張性重視
+
+レイアウトは layout.tsx で一元管理し、
+再利用性の高い構成を実現
+
+📦 今後の拡張予定
+
+Skills ページの追加（技術スタック一覧）
+
+Contact フォーム（API Route）実装
+
+ブログページの追加
+
+デザインのブラッシュアップ（Card / Section コンポーネント整理）
+
+Vercel へのデプロイ
+
+🔗 GitHub / SNS
+
+GitHub: https://github.com/rikuto-niwa04
+
+Portfolio（Vercel）: Coming Soon
+
+📄 ライセンス
+
+This project is licensed under the MIT License.
+
+🌟 作者
+
+Rikuto Niwa (丹羽陸斗)
+Next.js / TypeScript を中心に、
+モダンなWebアプリケーション開発を学習中。
