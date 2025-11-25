@@ -15,8 +15,6 @@ Tailwind CSS
 
 ESLint / Prettier
 
-Vercel（デプロイ予定）
-
 🧱 構成（Directory Structure）
 next-portfolio/
 ├─ app/
@@ -82,8 +80,6 @@ Contact フォーム（API Route）実装
 ブログページの追加
 
 デザインのブラッシュアップ（Card / Section コンポーネント整理）
-
-Vercel へのデプロイ
 
 ## 🔗 GitHub / SNS
 
