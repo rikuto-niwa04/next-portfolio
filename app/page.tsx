@@ -1,7 +1,11 @@
 // app/page.tsx
 import Link from "next/link";
+import { projects } from "@/lib/projects";        // ★自分のパス
+import { ProjectCard } from "@/components/project-card"; // ★さっき作ったやつ
 
 export default function HomePage() {
+   // 見せたい順に並んでる前提で、先頭3件をピックアップ
+  const pickupProjects = projects.slice(0, 3);
   return (
     <main className="space-y-10">
       {/* Hero セクション */}
@@ -39,7 +43,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ここに続きのセクション（Works のダイジェストとか）を置いていく */}
+       {/* ===== Pickup Works セクション ===== */}
+      <section className="space-y-4">
+        <div className="flex items-baseline justify-between gap-2">
+          <h2 className="text-xl font-semibold text-zinc-50">
+            Pickup Works
+          </h2>
+          <Link
+            href="/works"
+            className="text-xs text-zinc-400 hover:text-zinc-200 underline underline-offset-4"
+          >
+            すべての Works を見る →
+          </Link>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-3">
+          {pickupProjects.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
+        </div>
+      </section>
+      
     </main>
   );
 }
