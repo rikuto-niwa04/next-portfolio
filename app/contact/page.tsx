@@ -49,7 +49,7 @@ export default function ContactPage() {
 
     setState((s) => ({ ...s, loading: true }));
 
-    // ★ 自分の Formspree の URL に差し替えてね
+    // ★ 自分の Formspree の URL 
     const FORMSPREE_URL = "https://formspree.io/f/xqavbkzn";
 
     const res = await fetch(FORMSPREE_URL, {

@@ -40,7 +40,34 @@ export const projects: Project[] = [
       "既存テーマの運用改善",
       "スマホ表示を意識したUI調整",
     ],
+
     challenges:
       "既存テーマの構造が複雑で自由度が低いため、制約内でユーザー体験を改善する設計・微調整が求められた。運用者（トレーナー）の要望に沿った改善を継続。",
+      },
+    {
+        slug: "fitness-booking",
+        title: "FitnessBooking（パーソナルトレーニング予約システム）",
+        period: "2024年〜継続開発中",
+        role: "バックエンド / フロント実装 / カレンダーUI連携",
+        techStack: [
+        "C#",
+        "ASP.NET Core",
+        "Razor Pages",
+        "FullCalendar",
+        "SQLite",
+        ],
+        description:
+        "パーソナルトレーナー向けの予約管理システム。トレーナーのスケジュールをカレンダー形式で管理し、予約作成・編集・削除を行えるアプリケーション。FullCalendar と ASP.NET Core の連携を通して、フロントとバックエンドのデータ同期・イベント管理の基礎を学んだプロジェクト。",
+        githubUrl: "https://github.com/rikuto-niwa04/FitnessBooking",
+        IsExternal: false,
+        
+        features: [
+        "FullCalendar を用いた月間カレンダー表示",
+        "予約情報をデータベースと連携して表示・更新",
+        "ASP.NET Core Razor Pages による画面構築",
+        "today ボタンや前月/翌月ナビゲーションによる操作性の向上",
+        ],
+        challenges:
+        "FullCalendar が要求するイベントデータ形式と ASP.NET Core 側のモデル・エンドポイント設計を揃える部分に苦戦した。特に日時のフォーマットやタイムゾーンを意識しつつ、トレーナーごとの予約が重複しないようにサーバー側バリデーションを実装した点が学びになった。",
   },
 ];
