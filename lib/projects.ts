@@ -31,7 +31,6 @@ export const projects: Project[] = [
     githubUrl: "https://rtc-jp.online/",
     IsExternal: true,
 
-    // ★ 追加分ここから
     period: "2024年〜継続改善中",
     role: "フロントエンド実装 / 一部PHPテンプレ調整",
     features: [
