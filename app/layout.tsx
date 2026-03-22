@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rikuto Niwa | Portfolio",
-  description: "Next.js / TypeScript を中心としたポートフォリオサイト",
+  description: "ポートフォリオサイト",
 };
 
 export default function RootLayout({

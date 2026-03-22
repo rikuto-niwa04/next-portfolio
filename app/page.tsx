@@ -1,27 +1,26 @@
 // app/page.tsx
 import Link from "next/link";
-import { projects } from "@/lib/projects";        // ★自分のパス
-import { ProjectCard } from "@/components/project-card"; // ★さっき作ったやつ
+import { projects } from "@/lib/projects";
+import { ProjectCard } from "@/components/project-card"; 
 
 export default function HomePage() {
-   // 見せたい順に並んでる前提で、先頭3件をピックアップ
+   // 先頭から3件をピックアップ
   const pickupProjects = projects.slice(0, 3);
   return (
     <main className="space-y-10">
       {/* Hero セクション */}
       <section className="space-y-6">
         <p className="text-sm text-zinc-400">
-          フロントエンド志望の Web エンジニアです。
+          バックエンド志望の Web エンジニアを目指しています。
         </p>
 
         <h1 className="text-3xl md:text-4xl font-bold text-zinc-50 leading-tight">
-          Next.js / TypeScript を中心に、<br className="hidden md:block" />
+          Next.js / TypeScript / Java / C# を中心に、<br className="hidden md:block" />
           個人開発でスキルアップ中です。
         </h1>
 
         <p className="text-zinc-300 leading-relaxed max-w-xl">
-          モダンな自社開発・SaaS プロダクトで、
-          フロントエンドを軸にキャリアを築いていきたいと考えています。
+          バックエンドを軸にキャリアを築いていきたいと考えています。
           個人開発のアウトプットや、これまでの経歴をまとめました。
         </p>
 
