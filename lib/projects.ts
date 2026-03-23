@@ -2,25 +2,34 @@
 import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
-  {
-    slug: "next-portfolio",
-    title: "Next.js 個人ポートフォリオサイト",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    description:
-      "自己紹介・スキルセット・Works をまとめたポートフォリオサイト。App Router と TypeScript を使用。",
-    githubUrl: "https://github.com/rikuto-niwa04/next-portfolio",
-
-    period: "2025年11月（1〜2週間）",
-    role: "フロントエンド / UI 設計〜実装まで担当",
-    features: [
-      "App Router を用いたページ・動的ルーティング構築",
-      "Project 型と配列による型安全なデータ管理",
-      "Works 一覧と詳細ページの動的生成",
-      "Tailwind CSS によるシンプルでレスポンシブなUI",
+    {
+    slug: "task-management-app",
+    title: "Task Management App",
+    period: "2026.03 - 開発中",
+    role: "要件整理 / 設計 / 実装 / テスト",
+    techStack: [
+      "Java 17",
+      "Spring Boot",
+      "Spring Security",
+      "PostgreSQL",
+      "Gradle",
+      "JUnit"
     ],
-    IsExternal: false,
+    description:
+      "Spring Boot を用いた業務管理アプリです。ユーザーごとのタスク管理を想定し、認証・認可・状態遷移・監査ログといった実務で必要となる機能を意識して設計・実装しています。",
+    features: [
+      "Spring Security によるログイン認証",
+      "ユーザー単位の認可制御（自分のタスクのみ操作可能）",
+      "タスクの作成・一覧・更新・削除",
+      "ステータス（未着手 / 進行中 / 完了）の状態遷移管理",
+      "監査ログを意識した設計",
+      "Service層の責務分離",
+      "JUnit によるテスト"
+    ],
     challenges:
-      "型安全性を保ちつつ、Works を一覧と詳細で共通データからレンダリングできるように情報設計を工夫した。今後ブログページやスキルページを追加しやすい構造にした点も意識。",
+      "単なる CRUD で終わらせず、Task の状態遷移や責務分離を意識して設計しました。特に認証・認可まわりは、業務アプリとして自然な振る舞いになるように実装方針を整理しながら進めています。今後は API 化やフロントエンド分離、デプロイ対応まで拡張予定です。",
+    githubUrl: "https://github.com/rikuto-niwa04/task-management-app",
+    IsExternal: false
   },
 
   {
@@ -43,7 +52,8 @@ export const projects: Project[] = [
 
     challenges:
       "既存テーマの構造が複雑で自由度が低いため、制約内でユーザー体験を改善する設計・微調整が求められた。運用者（トレーナー）の要望に沿った改善を継続。",
-      },
+    },
+
     {
         slug: "fitness-booking",
         title: "FitnessBooking（パーソナルトレーニング予約システム）",
@@ -72,32 +82,24 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "task-management-app",
-    title: "Task Management App",
-    period: "2026.03 - 開発中",
-    role: "要件整理 / 設計 / 実装 / テスト",
-    techStack: [
-      "Java 17",
-      "Spring Boot",
-      "Spring Security",
-      "PostgreSQL",
-      "Gradle",
-      "JUnit"
-    ],
+    slug: "next-portfolio",
+    title: "Next.js 個人ポートフォリオサイト",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
     description:
-      "Spring Boot を用いた業務管理アプリです。ユーザーごとのタスク管理を想定し、認証・認可・状態遷移・監査ログといった実務で必要となる機能を意識して設計・実装しています。",
+      "自己紹介・スキルセット・Works をまとめたポートフォリオサイト。App Router と TypeScript を使用。",
+    githubUrl: "https://github.com/rikuto-niwa04/next-portfolio",
+
+    period: "2025年11月（1〜2週間）",
+    role: "フロントエンド / UI 設計〜実装まで担当",
     features: [
-      "Spring Security によるログイン認証",
-      "ユーザー単位の認可制御（自分のタスクのみ操作可能）",
-      "タスクの作成・一覧・更新・削除",
-      "ステータス（未着手 / 進行中 / 完了）の状態遷移管理",
-      "監査ログを意識した設計",
-      "Service層の責務分離",
-      "JUnit によるテスト"
+      "App Router を用いたページ・動的ルーティング構築",
+      "Project 型と配列による型安全なデータ管理",
+      "Works 一覧と詳細ページの動的生成",
+      "Tailwind CSS によるシンプルでレスポンシブなUI",
     ],
+    IsExternal: false,
     challenges:
-      "単なる CRUD で終わらせず、Task の状態遷移や責務分離を意識して設計しました。特に認証・認可まわりは、業務アプリとして自然な振る舞いになるように実装方針を整理しながら進めています。今後は API 化やフロントエンド分離、デプロイ対応まで拡張予定です。",
-    githubUrl: "https://github.com/rikuto-niwa04/task-management-app",
-    IsExternal: false
-  }
+      "型安全性を保ちつつ、Works を一覧と詳細で共通データからレンダリングできるように情報設計を工夫した。今後ブログページやスキルページを追加しやすい構造にした点も意識。",
+  },
+
 ];
