@@ -18,6 +18,7 @@ export const projects: Project[] = [
       "Works 一覧と詳細ページの動的生成",
       "Tailwind CSS によるシンプルでレスポンシブなUI",
     ],
+    IsExternal: false,
     challenges:
       "型安全性を保ちつつ、Works を一覧と詳細で共通データからレンダリングできるように情報設計を工夫した。今後ブログページやスキルページを追加しやすい構造にした点も意識。",
   },
@@ -69,4 +70,34 @@ export const projects: Project[] = [
         challenges:
         "FullCalendar が要求するイベントデータ形式と ASP.NET Core 側のモデル・エンドポイント設計を揃える部分に苦戦した。特に日時のフォーマットやタイムゾーンを意識しつつ、トレーナーごとの予約が重複しないようにサーバー側バリデーションを実装した点が学びになった。",
   },
+
+  {
+    slug: "task-management-app",
+    title: "Task Management App",
+    period: "2026.03 - 開発中",
+    role: "要件整理 / 設計 / 実装 / テスト",
+    techStack: [
+      "Java 17",
+      "Spring Boot",
+      "Spring Security",
+      "PostgreSQL",
+      "Gradle",
+      "JUnit"
+    ],
+    description:
+      "Spring Boot を用いた業務管理アプリです。ユーザーごとのタスク管理を想定し、認証・認可・状態遷移・監査ログといった実務で必要となる機能を意識して設計・実装しています。",
+    features: [
+      "Spring Security によるログイン認証",
+      "ユーザー単位の認可制御（自分のタスクのみ操作可能）",
+      "タスクの作成・一覧・更新・削除",
+      "ステータス（未着手 / 進行中 / 完了）の状態遷移管理",
+      "監査ログを意識した設計",
+      "Service層の責務分離",
+      "JUnit によるテスト"
+    ],
+    challenges:
+      "単なる CRUD で終わらせず、Task の状態遷移や責務分離を意識して設計しました。特に認証・認可まわりは、業務アプリとして自然な振る舞いになるように実装方針を整理しながら進めています。今後は API 化やフロントエンド分離、デプロイ対応まで拡張予定です。",
+    githubUrl: "https://github.com/rikuto-niwa04/task-management-app",
+    IsExternal: false
+  }
 ];
